@@ -3,7 +3,7 @@ import string
 ALPH = "абвгґдеєжзиіїйклмнопрстуфхцчшщьюя"
 ALPH_Upper = ALPH.upper()
 ALPHABET = ALPH + ALPH_Upper
-print(ALPHABET)
+print(f"ALPHABET Text: {ALPHABET}")
 def decrypt_text(text, key):
     decrypted_text = ""
     for i in range(len(text)):
@@ -30,7 +30,7 @@ key = "Федірко"
 
 
 protected_text = encrypt_text(some_text, key)
-print(protected_text)
+print(f"Protected Text: {protected_text}")
 
 decrypted_text = decrypt_text(protected_text, key)
 print(f"Decrypted Text: {decrypted_text}")
